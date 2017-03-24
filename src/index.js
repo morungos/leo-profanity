@@ -1,6 +1,6 @@
 var fs = require('fs');
 var wordDictionary = [];
-wordDictionary['default'] = JSON.parse(fs.readFileSync('./dictionary/default.json', 'utf8'));
+wordDictionary['default'] = require('../dictionary/default.json');
 var words = JSON.parse(JSON.stringify(wordDictionary['default']));
 
 /**
